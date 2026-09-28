@@ -1,16 +1,18 @@
 #ifndef USER_H
 #define USER_H
 
+#include <string>
+
 class User {
 
 private:
 	int userId;
-	String firstName;
-	String lastName;
-	String email;
-	String passwordHash;
-	String phoneNumber;
-	DateTime createdAt;
+	std::string firstName;
+	std::string lastName;
+	std::string email;
+	std::string passwordHash;
+	std::string phoneNumber;
+	std::string createdAt;
 
 public:
 	boolean login();
