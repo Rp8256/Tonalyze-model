@@ -15,9 +15,13 @@ private:
 	std::string createdAt;
 
 public:
-	bool login();
-
-	bool hasNoShowRestriction();
+    void signUp();
+    void logIn();
+    void logOut();
+    void updateTheme(std::string theme);
+    void clearHistory();
+    bool login(std::string email, std::string password);
+    bool hasNoShowRestriction();
 };
 
 #endif
