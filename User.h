@@ -15,9 +15,9 @@ private:
 	std::string createdAt;
 
 public:
-	boolean login();
+	bool login();
 
-	boolean hasNoShowRestriction();
+	bool hasNoShowRestriction();
 };
 
 #endif
