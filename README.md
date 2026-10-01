@@ -1,5 +1,5 @@
 # Tonalyze-model
-# Tonalyze — Class Model (CMSC 5613 OOSE)
+# Tonalyze — Model (CMSC 5613 OOSE)
 
 C++ class implementation exported from the Visual Paradigm class diagram for **Tonalyze**, a music dictation app that converts an uploaded audio recording/file into editable sheet music.
 
