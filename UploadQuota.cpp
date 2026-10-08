@@ -1,21 +1,16 @@
 #include "UploadQuota.h"
 
-boolean UploadQuota::checkQuota(int mins, int mins) {
-	// TODO - implement UploadQuota::checkQuota
-	throw "Not yet implemented";
+UploadQuota::UploadQuota(long long cooldownUntilSeconds)
+    : cooldownUntilSeconds(cooldownUntilSeconds) {}
+
+bool UploadQuota::checkQuota(int mins) {
+    return mins <= 10;
+}
+
+bool UploadQuota::isInCooldown(const Clock& clock) const {
+    return clock.nowSeconds() < cooldownUntilSeconds;
 }
 
 void UploadQuota::startCooldown() {
-	// TODO - implement UploadQuota::startCooldown
-	throw "Not yet implemented";
-}
-
-boolean UploadQuota::checkQuota(int mins, int mins) {
-	// TODO - implement UploadQuota::checkQuota
-	throw "Not yet implemented";
-}
-
-boolean UploadQuota::checkQuota(int mins) {
-	// TODO - implement UploadQuota::checkQuota
-	throw "Not yet implemented";
+    // TODO - set cooldownUntilSeconds from a real Clock in production code
 }
