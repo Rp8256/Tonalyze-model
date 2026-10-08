@@ -1,6 +1,7 @@
 #include "Feedback.h"
 
-void Feedback::submit() {
-	// TODO - implement Feedback::submit
-	throw "Not yet implemented";
+Feedback::Feedback(std::string comment) : comment(std::move(comment)) {}
+
+void Feedback::submit(FeedbackSink& sink) {
+    sink.record(comment);
 }
