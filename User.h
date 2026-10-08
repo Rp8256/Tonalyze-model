@@ -1,21 +1,22 @@
 #ifndef USER_H
 #define USER_H
-
+#include <string>
 class User {
-
 private:
-	int userId;
-	String firstName;
-	String lastName;
-	String email;
-	String passwordHash;
-	String phoneNumber;
-	DateTime createdAt;
-
+    int userId;
+    std::string firstName;
+    std::string lastName;
+    std::string email;
+    std::string passwordHash;
+    std::string phoneNumber;
+    std::string createdAt;
 public:
-	boolean login();
-
-	boolean hasNoShowRestriction();
+    void signUp();
+    void logIn();
+    void logOut();
+    void updateTheme(std::string theme);
+    void clearHistory();
+    bool login(std::string email, std::string password);
+    bool hasNoShowRestriction();
 };
-
 #endif
